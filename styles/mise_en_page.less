@@ -1,0 +1,160 @@
+@szparent:100%;
+
+
+//Constante
+.ligne(){
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.column(){
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nmlz(){
+  padding: 0;
+  margin: 0;
+}
+
+//Toutes les parties voulue se mettent en ligne
+.ligne{
+  .ligne;
+}
+
+.column{
+  .column;
+}
+
+
+/*-----------------------------------------------------*/
+
+#sitesweb{
+  display: flex;
+}
+//Décale les boutons
+.buttons{
+  margin-top: 2em;
+}
+nav{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  max-height: fit-content;
+
+  max-height: -moz-max-content;
+  max-height: -webkit-max-content;
+  //height: initial;
+  img{
+    width: auto;
+    height: 10vh;
+    margin: .5em;
+  }
+}
+//Header de la page d'accueil et main
+#accueil{
+  header{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+      margin: 1em;
+      ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row;
+        width: 100%;
+        list-style: none;
+        .nmlz;
+      }
+    }
+
+    /*Fait flasher l'indicateur de scroll*/
+    @keyframes flash {
+      from{opacity: 1;}
+      to{opacity: 0}
+    }
+
+    #scroll{
+      animation: flash 1s infinite ease-in-out;
+      animation-delay: 2s;
+      opacity: 0;
+
+      margin-bottom: 1rem;
+    }
+  }
+  main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+//Place le mockup pc à droite
+#waw-cont{
+  //position: relative;
+  &>div{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 3rem;
+    &>div{
+      max-height: fit-content;
+
+      max-height: -moz-max-content;
+    }
+  }
+}
+//Centre le premier contenu de la section vist
+.vist{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  >div:first-of-type{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    max-height: max-content;
+
+    max-height: -moz-max-content;
+  }
+}
+#pcmoc{
+  position: absolute;
+  right: -25vw;
+  top: 10%;
+}
+
+//Les images de la page d'accueil sont alignés correctement
+#img_com{
+  a{
+    width: 20vw;
+    margin: 1em;
+  }
+  img{
+    width: @szparent;
+  }
+}
+
+
+#trigger-left{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 60%;
+}
+footer{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
