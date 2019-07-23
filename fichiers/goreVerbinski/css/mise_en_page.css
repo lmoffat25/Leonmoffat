@@ -1,0 +1,73 @@
+body>div>div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#titre{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+#accueil>div{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#accueil>div>nav{
+    padding-top:40vh;
+}
+
+.titre{
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.articles{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.collumn{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.filmo
+
+/*Pirates*/
+#jack{
+    display: flex;
+    justify-content: center;
+}
+
+#canon{
+    display: flex;
+    justify-content: center;
+}
+
+/*filmographie*/
+#filmographie>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#listeF{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

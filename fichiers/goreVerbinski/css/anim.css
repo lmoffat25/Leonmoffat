@@ -1,0 +1,24 @@
+.imageToAppear{display:none;opacity:0}
+
+.titre, .TitreP{
+    animation: appear 2s ease-in-out;
+}
+
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appearbg { /*Apparition du fond*/
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
