@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /accueil.var
+Disallow: /httpd.conf
+
+Sitemap: https://www.leonmoffat.com/sitemap.xml
