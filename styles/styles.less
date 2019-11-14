@@ -78,6 +78,16 @@
   color: white;
   }
 }
+.bouton_pcl {
+  background-color: @white;
+  border: 2px @white solid;
+  color: @black;
+  &:hover{
+    background-color: gray;
+    border:2px solid gray;
+    // color: @white;
+  }
+}
 
 //Diagonales
 .diagonW(){
@@ -185,6 +195,10 @@
 .p-r-s {padding-right: 2.5rem;}
 .p-r {padding-right: 5rem;}
 .p-r-l {padding-right: 8rem;}
+
+.p-b-s() {padding-bottom: 1rem;}
+.p-b-m {padding-bottom: 1.5rem;}
+.p-b-l {padding-bottom: 2rem;}
 
 .p-l-s() {padding-left: 1rem;}
 .p-l-m {padding-left: 1.5rem;}
@@ -400,6 +414,65 @@ header{
   }
 }
 
+// Page sites Hebdomadaire
+#hebdomadaire {
+  header {
+    // height: auto;
+    padding-bottom: 2em;
+  }
+  main {
+    // padding: 2em;
+    height:100vh;
+  }
+}
+#hebdo{
+  width:100vw;
+  height:100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: wrap;
+  justify-content:flex-start;
+  align-items:flex-start;
+  width:auto;
+  height: auto;
+
+  box-sizing: border-box;
+  a{
+    margin: 1em;
+
+    p{
+      // border-top: 1px white solid;
+      margin-top: .5em;
+      position: relative;
+      &:before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        transform:translate(16%, -50%);
+        border-top:1px  @black solid;
+        width:75%;
+        height:1px;
+      }
+    }
+  }
+  .site{
+
+    height:200px;
+    border-radius: 5px;
+    text-align:center;
+
+    img {
+      margin-left: -4em;
+
+      width: auto;
+      height: 100%;
+    }
+  }
+
+
+}
 
 //Page Defi24h
 #defi {
@@ -596,6 +669,14 @@ footer{
 
 
 //LARGE SCREEN
+@media (max-width: 1200px) {
+  #boutonSites {
+    flex-flow:wrap;
+    justify-content:center;
+  }
+}
+
+
 @media (min-height: 1025px) and (orientation: landscape) {
   section{
     height: 70vh;
@@ -973,5 +1054,10 @@ footer{
         margin-bottom: 40vh;
       }
     }
+  }
+}
+@media (max-width: 530px) {
+  #boutonSites.buttons {
+    flex-flow:wrap;
   }
 }

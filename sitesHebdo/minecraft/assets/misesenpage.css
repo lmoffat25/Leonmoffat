@@ -1,0 +1,121 @@
+header, #modesdejeu, #communaute {
+  height: 100vh;
+}
+
+header nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+header #headcont {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row;
+  height: 75%;
+}
+header #headcont div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+header #headcont div:last-of-type p {
+  text-align: center;
+}
+
+#modesdejeu > div {
+  height: 75%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+#lesmodes {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 3em 0;
+}
+#lesmodes > div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#lesmodes > div img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+#communaute > div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+#communaute > div > div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  header #headcont {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5em;
+  }
+
+  #modesdejeu {
+    height: auto;
+  }
+  #modesdejeu #lesmodes {
+    flex-flow: column;
+    align-items: center;
+  }
+  #modesdejeu #lesmodes .modes {
+    margin: 1em 0;
+  }
+
+  #communaute {
+    height: auto;
+  }
+  #communaute > div {
+    margin-top: 2em;
+  }
+  #communaute #infos {
+    flex-flow: column;
+    align-items: center;
+  }
+  #communaute #infos > div {
+    margin: 1em;
+  }
+}
+
+/*# sourceMappingURL=misesenpage.css.map */

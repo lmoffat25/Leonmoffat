@@ -1,0 +1,149 @@
+header,#modesdejeu, #communaute {
+  height: 100vh;
+}
+header {
+  nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow:row;
+    justify-content: flex-end;
+  }
+  #headcont {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: row;
+    // justify-content:center;
+
+    height:75%;
+    div {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+    }
+    div:last-of-type {
+      p{
+        text-align:center;
+      }
+    }
+  }
+}
+
+// MODES DE JEU
+#modesdejeu {
+  >div{
+    height:75%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items:center;
+  }
+}
+#lesmodes {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-flow:row;
+  justify-content:space-around;
+  // align-items: space-between;
+
+  padding:3em 0;
+  >div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: space-around;
+
+    // margin: 0 4.25em;
+    img {
+      width:auto;
+      max-width:100%;
+      height:auto;
+      max-height:200px;
+      // max-height:200px;
+    }
+  }
+}
+
+// Rejoins nous
+#communaute {
+  >div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:center;
+    height: 75%;
+
+    >div {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-flow: row;
+
+      justify-content: space-around;
+      padding-top: 2em;
+    }
+  }
+}
+
+
+// FOOTER
+footer{
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+
+align-items:center;
+justify-content:center;
+}
+
+
+// RESPONSIVE--------------------------------------
+@media (max-width: 991px) {
+  header {
+    #headcont {
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5em;
+    }
+  }
+
+  #modesdejeu{
+    height: auto;
+    #lesmodes{
+      flex-flow: column;
+      align-items:center;
+      .modes{
+        margin: 1em 0;
+      }
+
+    }
+  }
+  #communaute {
+    height:auto;
+    >div{
+      margin-top:2em;
+    }
+    #infos{
+      flex-flow: column;
+      align-items: center;
+      >div{
+        margin: 1em;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  #infos{
+
+  }
+}

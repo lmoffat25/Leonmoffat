@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+ul {
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+h2 {
+  // border-bottom: 1px white solid;
+  padding: 1.5em 0;
+  position: relative;
+  &:before {
+    content:"";
+    position:absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width: 50%;
+    border-bottom: 1px white solid;
+  }
+}
+
+// Classes
+.button {
+  background-color: #fff;
+  color: black;
+  border: 2px white solid;
+  padding: .2em .5em;
+  width:100px;
+  text-align:center;
+  &:hover {
+    background-color: transparent;
+    color:white;
+  }
+}
+.adress {
+  border: 2px white solid;
+  padding: .75em 3em;
+  width: 100%;
+}
+
+// HEADER----------------------------------------
+header {
+  background-image: url(https://i.redd.it/ux9c3kika1dz.png);
+  background-size: cover;
+  // Menu
+  nav {
+    border-bottom: 1px white solid;
+    padding: 2em 0;
+    ul {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-flow:row;
+
+      li {
+        margin: auto 1em;
+
+        :hover{
+          text-decoration: none;
+          color: white;
+          border-bottom: 1.5px white solid;
+        }
+      }
+    }
+  }
+}
+
+.inter {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-flow: row;
+  justify-content: space-around;
+
+  padding: 5em;
+  p {
+    margin: 0;
+  }
+}
+
+// MODES DE JEU---------------------------------
+#modesdejeu {
+  background-image: url(https://pbs.twimg.com/media/DiVXScFWsAAdc7A.jpg);
+  background-size: cover;
+}
+.modes {
+  border: 2px white solid;
+  border-radius: 20px;
+  padding: 1em;
+
+  // max-width: 16.666%;
+}
+
+
+// COMMUNAUTE--------------------------------------
+#communaute{
+  background-image: url(https://i.imgur.com/V4gcvqG.png);
+  background-size: cover;
+  .adress {
+
+    border-radius: 15px;
+    // padding: .75em 10em;
+    width: fit-content;
+  }
+}
+.info {
+  border: 2px white solid;
+  padding: 1em;
+}
+
+// FOOTER-------------------------------------------------
+footer {
+  height:25vh;
+  background-color: darkgray;
+}
+
+@media (max-width: 991px){
+  .button{
+    padding:.75em 2em;
+    width:135px;
+  }
+}
+
+@media (max-width: 770px){
+  body{
+  header, #modesdejeu, #communaute {
+    background-position: center;
+  }
+
+    h2{
+      &:before{
+        width: 100%;
+      }
+    }
+  }
+}
