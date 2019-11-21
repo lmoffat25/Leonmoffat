@@ -18,7 +18,7 @@ if($action !== null)
   //Suppression des espaces verticaux
   $l = preg_replace('#\v#', '',$l);
   //On verifie que $p soit un float
-  $p = floatval($p);
+  $p = floatval($p); 
 
   //On traite $q qui peut etre un entier simple ou un tableau d'entier
 

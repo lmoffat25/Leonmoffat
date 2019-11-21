@@ -1,0 +1,3 @@
+mockup-mez.png
+Mezclamayor
+<a href="http://mezclamayor.com/">Mezcla mayor</a> est un site de présentation pour un groupe de musique latino. Le but du <strong>site</strong> est de donner de la visibilité au groupe et permettre aux professionnels de les contacter. </br>Pour ce <strong>projet</strong>, je me suis occupé du contenu textuel de la <strong>communication</strong> et du maquettage en <strong>html / css / js</strong>. J’ai également été nommé chef d’équipe pour assurer le bon déroulement du projet.

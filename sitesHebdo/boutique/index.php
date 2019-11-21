@@ -31,7 +31,7 @@
     <main>
       <?php include 'database.php'; ?>
       <section id="chaussettes" class="grille-vente">
-
+        
         <div class="text">
           <h2>Notre selection pour vous</h2>
           <p>Choissiez vos chiens, achetez les, recevez les.</p>
