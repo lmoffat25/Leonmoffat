@@ -16,4 +16,6 @@
   $stmt=$con->prepare('select * from chausettes');
   $stmt->execute();
 
+  $stmtb=$con->prepare('select * from projets');
+  $stmtb->execute();
 ?>

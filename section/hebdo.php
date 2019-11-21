@@ -5,25 +5,12 @@
 <div id="hebdo" class="container">
 
   <!-- Liste de sites -->
-
-  <!-- <a class="site col-lg-3" href="sitesHebdo/boutique/index.php">
+  <?php while ($row = $stmtb->fetch()) { ?>
+  <a class="site col-lg-3" href="<?php echo $row['link'] ?>">
     <div class="site" style="overflow:hidden;">
-      <img src="media/chaussettes.jpg" alt="Page d'accueil d'une boutique">
+      <img src="<?php echo $row['Image'] ?>" alt="Page d'accueil d'un site Parallax">
     </div>
-    <p>Boutique php</p>
-  </a> -->
-
-  <a class="site col-lg-3" href="sitesHebdo/parallax/index.html">
-    <div class="site" style="overflow:hidden;">
-      <img src="../media/parallax.jpg" alt="Page d'accueil d'un site Parallax">
-    </div>
-    <p>Effet Parallaxe</p>
+    <p><?php echo $row['name'] ?></p>
   </a>
-
-  <a class="site col-lg-3" href="sitesHebdo/minecraft/index.html">
-    <div class="site" style="overflow:hidden;">
-      <img src="../media/minecraft.jpg" alt="Page d'accueil d'un serveur Minecraft">
-    </div>
-    <p>Serveur Minecraft</p>
-  </a>
+<?php }  ?>
 </div>

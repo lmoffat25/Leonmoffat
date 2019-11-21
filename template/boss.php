@@ -10,7 +10,7 @@
         <!--
             MON TRAVAIL
         -->
-        <?php include ("../section/boss_cont.php") ?>
+        <?php include ("../section/cont.php") ?>
         <!--
             TELECHARGER
         -->

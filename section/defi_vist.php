@@ -1,6 +1,6 @@
 <section class="container-fluid vist bgwhite">
     <div class="">
-        <h2>Ouvrez vos oreilles !</h2>
+        <h3>Ouvrez vos oreilles !</h3>
         <p>
             Entrez dans Valénar, un lieu magique et burlesque.
         </p>

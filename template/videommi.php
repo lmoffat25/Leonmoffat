@@ -10,7 +10,7 @@
         <!--
             MON TRAVAIL
         -->
-        <?php include ("../section/vid_cont.php") ?>
+        <?php include ("../section/cont.php") ?>
         <?php include ("../section/vid_vist.php") ?>
     </main>
     <?php include ("../modules/footer.php") ?>

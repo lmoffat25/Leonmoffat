@@ -20,4 +20,6 @@
 <?php
   $myfile = "../content/$page.txt"; //Charge le contenu
   $line = file($myfile); //Met le contenu dans un tableau
+
+  include '../sitesHebdo/boutique/database.php';
 ?>
