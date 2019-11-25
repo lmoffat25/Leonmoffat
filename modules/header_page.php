@@ -1,7 +1,7 @@
 
 <header class="container-fluid <?php if(!empty($white)){echo 'bgwhite';}else{echo '';} ?>">
     <nav class="container-fluid col-md-8 logo">
-        <a href="../template/index.php"><img src="../media/<?php if(!empty($white)){echo 'logo_leonMoffat.png';}else{echo 'logo.svg';} ?>"  alt="logo du site de Léon Moffat"></a>
+        <a href="../index.php"><img src="../media/<?php if(!empty($white)){echo 'logo_leonMoffat.png';}else{echo 'logo.svg';} ?>"  alt="logo du site de Léon Moffat"></a>
     </nav>
     <div class="container ligne">
         <div class="ligne" style="position: relative; height: 100%; width: 100%;">

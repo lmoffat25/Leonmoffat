@@ -9,7 +9,7 @@
     <main>
         <!-- MON TRAVAIL -->
         <?php include ("../section/waw_cont.php") ?>
-        <?php include ("../section/waw_vist.php") ?>
+        <?php include ("../modules/site_vist.php") ?>
     </main>
     <?php include ("../modules/footer.php") ?>
   </body>

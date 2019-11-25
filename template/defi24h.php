@@ -10,11 +10,11 @@
         <!--
             MON TRAVAIL
         -->
-      <?php include ("../section/cont.php") ?>
+      <?php include ("../modules/cont.php") ?>
         <!--
             TELECHARGER
         -->
-      <?php include ("../section/defi_vist.php") ?>
+      <?php include ("../modules/autres_vist.php") ?>
     </main>
     <?php include ("../modules/footer.php") ?>
 </body>

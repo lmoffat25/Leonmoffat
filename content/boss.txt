@@ -3,3 +3,9 @@ Le Boss est un examen final sur deux jours réalisé en <a href="http://mmimontb
 
 Mon site présente Gore Verbinski, un réalisateur. Je montre certains de ces films et une vidéothèque plus complète. J'ai préparé ma maquette sur Adobe XD avant de la développer statiquement.  Le second jour, j'ai utilisé VueJs, je m'en suis servi notamment pour charger les contenus et pour gérer la navigation. Pour moi, mon tout dernier Boss s'est bien passé. J'étais inspiré et j'ai pu respecter les contraintes de temps. Ma maquette n'était certes, pas des plus complexes, mais le code était propre. Et j'ai profité de l'examen pour apprendre une nouvelle techno, Bootstrap. Je me suis lancé le défi d'apprendre quelque chose que je ne connaissais pas du tout et l'appliquer le jour même à l'examen. Et ça a fonctionné.
 filmo.jpg
+Mon travail
+Jettez un oeil à mon boss
+Le site n'est pas en ligne, mais vous pouvez voir un morceau avec le lien ci-dessous.
+
+Decouvrez un autre projet
+defi24h.php

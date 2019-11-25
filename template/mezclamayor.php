@@ -8,8 +8,8 @@
   <?php include ("../modules/header_page.php") ?>
     <main>
         <!-- MON TRAVAIL -->
-        <?php include ("../section/mez_trav.php") ?>
-        <?php include ("../section/mez_vist.php") ?>
+        <?php include ("../section/mez_cont.php") ?>
+        <?php include ("../modules/site_vist.php") ?>
     </main>
     <?php include ("../modules/footer.php") ?>
 </body>

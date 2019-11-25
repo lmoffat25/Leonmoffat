@@ -1,6 +1,8 @@
+<!-- Corp de la page, son contenu -->
+
 <section class="<?php if($page=='videommi'|| $page=='defi'|| $page=='boss'){echo "";}else{echo "bgwhite";} ?> container-fluid  ligne monTravail">
     <div class="container col-md-5 nmlz" data-aos="fade-in">
-        <h2>Mon travail</h2>
+        <h2><?= $line[5] //Titre ?></h2>
         <div>
           <p>
             <?= $line[3] //Texte ?>
