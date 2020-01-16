@@ -19,7 +19,7 @@ $(document).ready(function(){
       }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = affiche;
+        window.location.hash = hache;
 
         //Retire # des ancres
         // remove fragment as much as it can go without adding an entry in browser history:
