@@ -10,6 +10,7 @@ $(document).ready(function(){
 
       // Store hash
       var hash = this.hash;
+      var affiche = " ";
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -18,20 +19,24 @@ $(document).ready(function(){
       }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        window.location.hash = affiche;
+
+        //Retire # des ancres
+        // remove fragment as much as it can go without adding an entry in browser history:
+        window.location.replace("#");
+
+        // slice off the remaining '#' in HTML5:
+        if (typeof window.history.replaceState == 'function') {
+          history.replaceState({}, '', window.location.href.slice(0, -1));
+        }
       });
     } // End if
   });
 
-  //Retire # des ancres
-  // remove fragment as much as it can go without adding an entry in browser history:
-  window.location.replace("#");
 
-  // slice off the remaining '#' in HTML5:
-  if (typeof window.history.replaceState == 'function') {
-    history.replaceState({}, '', window.location.href.slice(0, -1));
-  }
 });
+
+$
 
 //Animation au scroll
   AOS.init({
