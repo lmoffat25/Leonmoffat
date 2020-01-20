@@ -2,7 +2,8 @@
 
 RewriteEngine on
 
-# Ne s'applique pas aux dossiers existants, si dossier existe on n'execute pas requete !
+# Ne s'applique pas aux dossiers existants,
+#si dossier existe on n'execute pas requete !
 
 RewriteCond %{REQUEST_FILENAME} !-d
 
