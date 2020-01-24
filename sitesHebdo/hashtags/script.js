@@ -23,6 +23,7 @@ function insideli(item){
         document.getElementById("liste").innerHTML += "<li>" +  item + "</li> <br>";
 }
 
+
 //Mélange le tableau
 function shuffle(array) {
 console.log("Je lance la fonction mélanger");
@@ -44,8 +45,8 @@ console.log("Je lance la fonction mélanger");
   return array;
 }
 
-function checkFieldLength(elem){
-    if (elem.value.length > 300) {
-        elem.value = elem.value.slice(0,300);
-    }
-}
+// function checkFieldLength(elem){
+//     if (elem.value.length > 300) {
+//         elem.value = elem.value.slice(0,300);
+//     }
+// }
