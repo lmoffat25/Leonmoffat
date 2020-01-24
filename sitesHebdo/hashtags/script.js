@@ -3,7 +3,7 @@ function sort() {
   //Récupère valeur de l'input
 	var a = document.getElementById('hash').value
   //Sépare tout les mots
-	var arr = a.split(",");
+	var arr = a.split(" ");
 
     // Pour chaque mot, faire marcher fonction
     arr.forEach(insideli);
@@ -42,4 +42,10 @@ console.log("Je lance la fonction mélanger");
   array[randomIndex] = temporaryValue;
   }
   return array;
+}
+
+function checkFieldLength(elem){
+    if (elem.value.length > 300) {
+        elem.value = elem.value.slice(0,300);
+    }
 }
