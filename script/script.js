@@ -30,7 +30,7 @@ $(document).ready(function(){
         //   history.replaceState({}, '', window.location.href.slice(0, -1));
         // }
 
-        
+
       });
     } // End if
   });

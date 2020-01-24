@@ -1,0 +1,76 @@
+p, h1, span {
+  color: white;
+}
+h1 {
+  font-size: 5em;
+  font-family: 'Cookie', cursive;
+  font-weight: 100;
+  margin-bottom: auto;
+}
+
+body {
+  background-image: url("./Inshtager_fond.jpg");
+  background-size: cover;
+
+  height: 100vh;
+  margin: auto;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-flow: column;
+  // justify-content: center;
+  margin-top: 13%;
+}
+#header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-flow: column;
+  // justify-content:
+  align-items: center;
+
+  #input {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      margin-right: .5em;
+      width: 250px;
+      padding: .5em;
+
+    }
+    button {
+      background-color: transparent;
+      padding: .5em 1em;
+      border: 2px solid white;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: white;
+      color: black;
+    }
+
+
+  }
+}
+
+#content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+
+  width: 50vw;
+
+  align-self: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hashtags sorter</title>
+
+  <link rel="stylesheet/less" href="styles.less">
+  <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
+</head>
+<body>
+
+  <div id="header">
+    <h1>Inshtager</h1>
+    <p>Paste all your Hastags, separated by comas.</p>
+    <div id="input">
+      <input id="hash"/>
+      <button onclick="sort()">Hashtag it!</button>
+    </div>
+  </div>
+
+
+  <ul id="liste" style="display: none;"></ul>
+
+
+<div id="content">
+  <p>Here are your 30 Hastags</p>
+  <span></span>
+</div>
+
+  <!-- Ou s'affiche les # mélangés -->
+  <!-- <div style="display: flex; flex-flow: row; align-items: flex-start;"> -->
+    <!-- <p style=" margin-top: 0;">#</p> -->
+    <!-- <span></span> -->
+  <!-- </div> -->
+
+  <script src="script.js"></script>
+  <footer></footer>
+</body>
+</html>
