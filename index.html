@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.2/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet/less" href="styles/styles.less">
     <link rel="stylesheet/less" href="styles/typographie.less">
@@ -19,7 +19,7 @@
 
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.2/dist/aos.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script> -->
     <!-- <script src="script/parallax.js"></script> -->
 
@@ -68,10 +68,8 @@
 
     <main>
         <p id="intro" class="col-xs-12 col-md-6">
-            Salut ! Je m'appelle <strong>Léon Moffat</strong>. Je suis étudiant en <a href="http://mmimontbeliard.com/">MMI à Montbéliard</a>.
-            Ces deux dernières années, je me suis essayé à de nombreux domaines. Toujours à la recherche de nouvelles connaissances
-            et à élargir mon esprit à de nouvelles disciplines. J'ai testé l'<strong>audiovisuel</strong>, le <strong>web-design</strong>, le <strong>dévelopement front-end</strong> mais également le
-            <strong>référencement</strong> et le <strong>web marketing</strong>.
+            Salut ! Je m'appelle Léon Moffat. J'ai 20 ans et je viens d'obtenir mon diplôme en <a href="http://mmimontbeliard.com/">MMI à Montbéliard</a>. C'est dernières années je me suis essayé à de nombreux domaines.
+            Toujours à la recherche de nouvelles connaissances et à élargir mon esprit à de nouvelles disciplines. Deux sont sortie du lot pour moi. Le dévelopement web et le web marketing.
         </p>
 
         <!--
@@ -88,20 +86,44 @@
                     <!-- <img class="" style="width: 100%" src="" data-src="media/mockups.png" alt="mockups des sites réalisés"/> -->
                 </div>
                 <div class=" col-sm-12 col-md-6 col-lg-6 rightline ">
-                    <h2 class="">Mes sites Webs</h2>
+                    <!-- <h2 class="">Mes sites Webs</h2> -->
                     <p>
-                        Pendant mes études, j'ai travaillé sur différents <strong>sites internet</strong>.
-                        Je me suis occupé du <strong>marketing</strong> et du <strong>développement front-end</strong> de ces <strong>projets</strong>.
-                        Chaque fois, j'ai également eu la responsabilité de mener mon équipe.
-                        Voici deux des <strong>sites</strong> sur lesquels j'ai travaillé et les sites que je fais tous les deux jours.
+                        Ma passion pour internet a grandie aux côtés de mes travaux. J'ai particié et mené à bien de nombreux sites et plans de communications.
+                        Ma vision des choses, mon travail et l'aide de mon équipe ont permi à plusieurs de nos travaux de sortir du lot. Entre idée la plus originale de la promo
+                        ou plan le plus concret, innovant et fonctionnel. Ici je vous présente ce sur quoi j'ai travaillé ces derniers temps.
                     </p>
-                    <div id="boutonSites" class="buttons">
+                    <!-- <div id="boutonSites" class="buttons">
                         <a href="whataworld" class="bouton">What a world</a>
                         <a href="mezclamayor" class="bouton">Mezcla Mayor</a>
                         <a href="siteshebdo" class="bouton bouton_pcl">Sites hebdomadaires</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+        </section>
+
+        <section id="mesProjets" class="container-fluid bgwhite">
+          <div  class="container">
+            <div class="title">
+              <h2>Mes projets</h1>
+              <div class="tri">
+                <button class="select bold" id="on">Tout</button>
+                <button class="select" id="web">Sites</button>
+                <button class="select" id="com">Communication</button>
+                <button class="select" id="other">Autres</button>
+              </div>
+            </div>
+            <ul id="projects" class="container">
+              <li class="project web"><a href="mezclamayor"><img src="media/mezclamayor-accueil.PNG" alt=""><p>Mezcla Mayor</p></a></li>
+              <li class="project oth"><a href="whataworld"><img src="media/whataworld-accueil.JPG" alt=""><p>What a World</p></a></li>
+              <li class="project web"><a href="https://epicerie-produits-mediterraneens.com/" target=_blank><img src="media/toques-accueil.JPG" alt=""><p>Toques et méditerranée</p></a></li>
+              <li class="project web"><a href="https://baf-fc.fr/" target=_blank><img src="media/baf-accueil.JPG" alt=""><p>BAF</p></a></li>
+              <li class="project web"><a href="https://figurines-wargame.fr/" target=_blank><img src="media/figur.JPG" alt=""><p>Qui commence</p></a></li>
+              <li class="project com"><a href="videommi"><img src="media/departmmi_petit.jpg" alt=""><p>Vidéo Promotion</p></a></li>
+              <li class="project com"><a href="vinsjura"><img src="media/vigne.jpg" alt=""><p>Vins du Jura</p></a></li>
+              <li class="project oth"><a href="defi24h"><img src="media/epopee_petit.jpg" alt=""><p>Défi 24h</p></a></li>
+              <li class="project web oth"><a href="BossS3"><img src="media/gore_petit.jpg" alt=""><p>Boss</p></a></li>
+            </ul>
+          </div>
         </section>
 
         <!--
@@ -111,16 +133,17 @@
         <section class="container-fluid bgwhite ligne" id="communication" >
             <div class="container ligne">
                 <div class="leftline col-sm-12 col-xs-12 col-md-6 col-lg-6">
-                    <h2>Projets de communication</h2>
+                    <!-- <h2>Projets de communication</h2> -->
                     <p>
-                        Je me suis spécialisé dans la <strong>communication</strong>. Avec mon groupe, j'ai travaillé sur l'image des
-                        <a href="https://www.jura-vins.com/">vins du jura</a> à l'échelle de la France et sur la présence en ligne du <a href="http://mmimontbeliard.com/">département de mon DUT MMI</a>.
-                        Au cours de ces <strong>projets</strong>, j'ai dû analyser le marché, déterminer les cibles, soumettre des <strong>plan de communication</strong>, des <strong>lignes éditoriales</strong> … En voici le détail cas par cas.                </p>
-                    <div class="buttons">
+                        Aujourd'hui, je travaille tous les jours sur ce qu'il me plait. J'apprend de nouvelles choses tous les jours, je m'améliore constament.
+                        Je me lève le matin avec pour but de rajouter du contenu à ce site. J'ai eu la chance de travailler sur des projets qui me tiennent à coeur. Sur des sites utilisés tous les jours.
+                        Demain me réserve des surprises, est-ce que vous en ferait partie ?
+                    </p>
+                    <!-- <div class="buttons">
                       <a href="actualites" class="bouton_white bouton">Actualités</a>
                         <a href="vinsjura" class="bouton bouton_white">Vins du Jura</a>
                         <a href="commmi" class="bouton_white bouton">MMI Montbéliard</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div  id="img_com" class="col-md-6 col-sm-12 ligne fadeIn aosMove" data-aos="fade-left">
                     <a href="vinsjura">
@@ -140,7 +163,7 @@
             AUTRES PROJETS
         -->
 
-        <section id="autres" class="container vist">
+        <!-- <section id="autres" class="container vist">
             <div class="col-md-8 aosMove" data-aos="fade-up">
                 <h2 class="topline">Autres Projets</h2>
                 <p>Durant ou en dehors des cours, j'ai réalisé plusieurs <strong>projets</strong> pour approfondir certaines compétences ou mes capacités à travailler sous contraintes.
@@ -155,7 +178,7 @@
                         </div>
                         <a href="videommi">
                             <img class="img_gallerie" src="media/departmmi.jpg" alt="Affiche du département MMI Montbéliard - Léon Moffat"/> <!-- image sans lazy load -->
-                            <!-- <img class="img_gallerie " src="" data-src="media/departmmi.jpg" alt="Affiche du département MMI Montbéliard"/> -->
+                            <!-- <img class="img_gallerie " src="" data-src="media/departmmi.jpg" alt="Affiche du département MMI Montbéliard"/>
                         </a>
                     </li>
                     <li>
@@ -164,7 +187,7 @@
                         </div>
                         <a href="defi24h">
                             <img class="img_gallerie" src="media/epopee.PNG" alt="Affiche de l'histoire audio par Léon Moffat"/> <!-- image sans lazy load -->
-                            <!-- <img class="img_gallerie " src="" data-src="media/epopee.PNG" alt="Affiche de l'histoire audio"/> -->
+                            <!-- <img class="img_gallerie " src="" data-src="media/epopee.PNG" alt="Affiche de l'histoire audio"/>
                         </a>
                     </li>
                     <li>
@@ -173,7 +196,7 @@
                         </div>
                         <a href="BossS3">
                             <img class="img_gallerie" src="media/gore.jpg" alt="Photo de Gore Verbinski du site de Léon Moffat"/> <!-- image sans lazy load -->
-                            <!-- <img class="img_gallerie " src="" data-src="media/gore.jpg" alt="Photo de Gore Verbinski"/> -->
+                            <!-- <img class="img_gallerie " src="" data-src="media/gore.jpg" alt="Photo de Gore Verbinski"/>
                         </a>
                     </li>
                 </ul>
@@ -187,11 +210,11 @@
                     <a href="BossS3"></a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
     <footer id="footer" class="container-fluid">
-        <a href="https://www.linkedin.com/in/leon-moffat-548206170/" target=_blank rel="noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/leonmfft/" target=_blank rel="noreferrer">Instagram</a>
         <a href="mailto:leonmfft@gmail.com">Contact</a>
         <a href="https://www.facebook.com/leon.moffat.581" target=_blank rel="noreferrer">Facebook</a>
     </footer>

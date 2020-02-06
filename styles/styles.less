@@ -29,6 +29,10 @@
 .bgwhite{
   background-color: white;
 }
+.bold {
+  font-weight: bold;
+}
+
 
 //Boutons
 //parent
@@ -89,6 +93,17 @@
   }
 }
 
+.select {
+  background-color: transparent;
+  border: none;
+  color: @white;
+
+  width: 15%;
+}
+.select:hover {
+  font-weight: bold;
+}
+
 //Diagonales
 .diagonW(){
   content: "";
@@ -119,7 +134,7 @@
   .diagonW;
 }
 //Section mon travail + com index
-.diag .monTravail, #communication, #mezclamayor>header{
+.diag .monTravail, #mezclamayor>header{
   &::after{
     .diagonB;
   }
@@ -208,6 +223,9 @@
 .p-t-b-s {padding: 1rem 0 1rem 0}
 .p-t-b-m {padding: 3rem 0 3rem 0}
 .p-t-b-l {padding: 6rem 0 6rem 0}
+
+.off {display: none;}
+.on {display: visible;}
 
 
 
@@ -368,6 +386,53 @@ header{
     min-height: 400px;
     background: transparent;
   }
+
+  #mesProjets {
+    min-height: 60vh;
+    height: auto;
+    >div {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+
+      flex-flow: column;
+    }
+    .tri {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-flow: row;
+      button {
+        border-right: solid 1px @white;
+      }
+      button:last-of-type {
+        border: none;
+      }
+      button:focus {outline:0;}
+    }
+
+    .title {
+      margin-bottom: 2em;
+    }
+    #projects {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+
+      flex-flow: wrap;
+      .project {
+        text-align: center;
+        width: 20%;
+        padding: 0 1em;
+        overflow: hidden;
+        >a>img {
+          width: auto;
+          height: 100px;
+        }
+      }
+    }
+  }
+
 }
 
 .autre{
@@ -645,10 +710,7 @@ header{
   }
 }
 .links {
-  // background-image: url('../media/epopee.PNG');
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: center;
+
   height:20vh;
   // width: 50%;
   border-radius: 15px;
@@ -801,6 +863,17 @@ footer{
     top : 25%;
   }
 
+  // #projects{
+  //   .project {
+  //     width: 50%;
+  //   }
+  // }
+  .tri {
+    button {
+      width: auto;
+    }
+  }
+
 }
 
 //SMALL SCREEN
@@ -840,6 +913,11 @@ footer{
     }
   }
 
+  #accueil #mesProjets #projects {
+    .project {
+      width: 50%;
+    }
+  }
 
   .img_mobile {
     display: block;
