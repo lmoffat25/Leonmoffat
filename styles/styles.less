@@ -318,7 +318,7 @@ header, section{
 
 }
 //Petit logo pages contenu
-.logo, .bouton, nav ul {
+.logo, .bouton, nav ul, nav {
   z-index: 999999;
 }
 header{
@@ -356,32 +356,32 @@ header{
       text-align: center;
     }
   }
-  header {
-    nav {
-      >ul {
-        a:hover {
-          opacity: .5;
+  nav {
+    background-color: @black;
+    >ul {
+      a:hover {
+        opacity: .5;
+      }
+      li {
+        text-align: center;
+        width: 7rem;
+        ul {
+          background: @white;
+          border-radius: 5px;
+          display: none;
         }
-        li {
-          text-align: center;
-          width: 7rem;
-          ul {
-            background:rgba(255,255,255,0.05);
-            border-radius: 5px;
-            display: none;
-          }
-          &:hover{
-            ul{
-              .visible;
-              position: absolute;
-              max-width: 7rem;
+        &:hover{
+          ul{
+            .visible;
+            position: absolute;
+            max-width: 7rem;
 
-            }
           }
         }
       }
     }
   }
+
   .bgsites {
     min-height: 400px;
     background: transparent;

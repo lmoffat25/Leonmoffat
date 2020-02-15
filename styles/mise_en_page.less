@@ -62,23 +62,29 @@ nav{
 }
 //Header de la page d'accueil et main
 #accueil{
+  nav{
+    position: fixed;
+    padding: 1em;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    justify-content: center;
+    ul{
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row;
+      width: 100%;
+      list-style: none;
+      .nmlz;
+    }
+  }
   header{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
     //Menu
-    nav{
-      margin: 1em;
-      ul{
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row;
-        width: 100%;
-        list-style: none;
-        .nmlz;
-      }
-    }
 
     /*Fait flasher l'indicateur de scroll*/
     @keyframes flash {
