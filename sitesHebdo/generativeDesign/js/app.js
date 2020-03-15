@@ -7,7 +7,7 @@ var mesh;
 var sign = 1;
 var speed = .5;
 
-var vertexHeight = 10;
+var vertexHeight = 30;
 var Definition = 30;
 var Size = 2000;
 
@@ -15,10 +15,8 @@ var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
 
 function onMouseMove( event ) {
-
 	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
 	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-
 }
 window.addEventListener( 'mousemove', onMouseMove, false );
 
@@ -32,7 +30,7 @@ function init() {
 	container = document.getElementById('canvas');
 	clock = new THREE.Clock();
 
-	renderer = new THREE.WebGLRenderer(); // Add {alpha: true} for transparent background
+	renderer = new THREE.WebGLRenderer({alpha: true}); // Add {alpha: true} for transparent background
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	container.appendChild(renderer.domElement);
@@ -51,9 +49,6 @@ var plane = new THREE.Mesh( new THREE.SphereGeometry( Size, Definition, Definiti
 new THREE.MeshLambertMaterial( { color: 0x555555, wireframe: false } ) );
 scene.add( plane );
 
-
-
-
 var ambientLight = new THREE.AmbientLight( 0x404040 );
 var spotLight = new THREE.DirectionalLight( 0x404040, 3 );
 
@@ -71,9 +66,7 @@ var update = function() {
 
 	camera.position.x =  mouse.x*300;
 	camera.position.y =  mouse.y*200;
-
 }
-
 
  function updateVerts() {
    for (var i = 0; i < plane.geometry.vertices.length; i++)
@@ -93,12 +86,8 @@ var update = function() {
 //Scene
 var render = function() {
 	var delta = clock.getDelta();
-
 	raycaster.setFromCamera( mouse, camera );
-
 	updateVerts();
-
-
 	renderer.render(scene, camera);
 };
 
@@ -117,10 +106,10 @@ GameLoop();
 //Functions
 //resize screen
 window.addEventListener( 'resize', function(){
-	    camera.aspect = window.innerWidth / window.innerHeight;
-	    camera.updateProjectionMatrix();
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
 
-	    renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.setSize( window.innerWidth, window.innerHeight );
 });
 
 function onVisibilityChange() {
