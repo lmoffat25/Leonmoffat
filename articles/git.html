@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1f1d1d">
+    <title>Léon Moffat | Git</title>
+    <meta name="description" content="J'apprend de nouvelles choses tous les jours. Ici j'en parle sous forme de petit blogs écrit ou n'importe quoi d'autre qui me plait. Ils peuvent concérner des actualités, de nouvelles technos ou tout autres choses en rapport avec les métiers du web.">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet/less" href="../styles/styles.less">
+    <link rel="stylesheet/less" href="../styles/typographie.less">
+    <link rel="stylesheet/less" href="../styles/mise_en_page.less">
+    <LINK REL="SHORTCUT ICON" href="https://www.leonmoffat.com/media/favicon.ico">
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script> -->
+    <!-- <script src="script/parallax.js"></script> -->
+</head>
+<body id="articles">
+  <header class="headerarticles ">
+    <nav class="container-fluid col-md-8 logo">
+        <a href="../index"><img src="../media/logo.svg"  alt="logo du site de Léon Moffat"></a>
+    </nav>
+    <div>
+      <h1>Utiliser Git et ses commandes</h1>
+    </div>
+  </header>
+  <main class="container-fluid bgwhite">
+    <div class="container">
+
+
+
+
+      <div>
+        <h2>L'arbre Git</h2>
+        <p>Git permet de gérer des versions différentes(branches) d'un projet. C'est utile pour éviter les erreurrs ou pour gérer le travail de son équipe. On fusionne les branches au Master quand on est satisfait du résultat. En effet, on peut imaginer Git comme un arbre. Il est composé d'un tronc et de branches. Le tronc (master) représente le projet tel qu'il est sur internet. Les branches elles, sont des versions du site avec des modifications ou du contenu en plus. Elles attendent validation avant d'être mélangée(merged) au master. On peut créer une branche par fonctionnalité, ou par membre de l'équipe .. A vous de voir comment vous voulez vous organiser.</p>
+      </div>
+      <div>
+        <h2>Mettre en place un projet avec Git</h2>
+        <p>Sur <a href="https://github.com/">GitHub</a> il faut créer un répertoire pour votre projet. Cela va générer une url qui correspond à votre site. Ensuite il faut téléverser tous les fichiers déjà existant de votre site. Maintenant, depuis votre ordinateur allez dans votre terminal de commande(tapez cmd dans vos recherches sur windows). Sans rien faire d'autre tapez "git clone urlgithub". Votre projet est prêt ! Il vous suffit maintenant de vous déplacer jusqu'à l'emplacement de votre projet pour travailler dessus.
+        </p>
+      </div>
+      <div>
+        <h2>Les commandes Git</h2>
+        <p>Voici une liste des commandes les plus utiles d'après moi pour maintenir votre projet à jour.</p>
+        <ul>
+          <li>git branch nomdelabranche - Créer une nouvelle branche</li>
+          <li>git checkout nomdelabranche - Déplace vers la branche</li>
+          <li>git pull - Récupère la version du projet de GitHub</li>
+          <li>git status - Vérifie si il y a eu des modifications</li>
+          <li>git add . - Sélectionne tous les fichiers qui ont été modifié</li>
+          <li>git commit -m"j'ai modifié ceci" - Prépare les fichiers pour la publication</li>
+          <li>git push - Met les modifications en ligne</li>
+        </ul>
+      </div>
+
+
+
+    </div>
+    <!-- Mentions Légales ! -->
+    <div class="remerc">
+      <h2>Merci d'avoir lu !</h2>
+      <p>Pour plus d'info et pour les avoir plus rapidement rendez-vous sur mes <a href="https://www.instagram.com/leonmoft/">réseaux sociaux</a> !</p>
+    </div>
+  </main>
+  <footer id="footer" class="container-fluid">
+      <a href="https://www.linkedin.com/in/leon-moffat-548206170/" target=_blank rel="noreferrer">LinkedIn</a>
+      <a href="mailto:leonmfft@gmail.com">Contact</a>
+      <a href="https://www.facebook.com/leon.moffat.581" target=_blank rel="noreferrer">Facebook</a>
+  </footer>
+</body>

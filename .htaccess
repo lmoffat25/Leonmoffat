@@ -1,0 +1,16 @@
+# mod_rewrite commence ici
+
+RewriteEngine on
+
+# Ne s'applique pas aux dossiers existants,
+#si dossier existe on n'execute pas requete !
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Cherche page qui a extension .html
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Ici on affiche la page qui a extension .html
+
+RewriteRule ^(.*)$ $1.html [NC,L]

@@ -1,0 +1,74 @@
+/*  COULEUR */
+@white: #b9b9b9;
+@black: #1f1d1d;
+
+/*  FONT SIZE */
+@ftszbsc: 1em;
+@ftszh1: 5em;
+@ftszh2: 3em;
+@ftszh3: 2em;
+@ftszbtn: 1.25em;
+
+/*  FONTS */
+@fttls: 'Alegreya', serif;
+
+//Met en blanc par défaut
+h1,h2,h3,p,a,li{
+  color: @white;
+}
+
+// styles des liens
+a{
+  &:hover{
+    color: @white;
+    text-decoration: none !important;
+  }
+}
+a:hover {
+  color: @white;
+  text-decoration: none !important;
+}
+//Mots cles meme taille que le reste
+strong{
+  font-weight: normal;
+}
+
+.bgwhite{
+  h1,h2,h3,p,a,li,button{
+    color: @black;
+  }
+}
+
+body{
+  font-size: 16px;
+
+  h1, h2, h3{
+    font-size: @ftszh2;
+    font-family: @fttls;
+  }
+  h3{
+    font-size: @ftszh3;
+    font-family: @fttls;
+  }
+  p,a{
+    font-size: @ftszbsc;
+  }
+  #scrollIndicator{
+    font-size: @ftszbtn;
+  }
+}
+
+#accueil{
+  nav ul li ul li a{
+    color: @black;
+  }
+  h1{
+    font-size: @ftszh1;
+  }
+}
+
+#articles {
+  h2 {
+    font-size: 2em;
+  }
+}

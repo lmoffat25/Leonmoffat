@@ -1,45 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Leon Moffat | Developement Web</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1f1d1d">
+    <title>Léon Moffat | Dévelopement marketing web</title>
+    <meta name="description" content="Je m'appelle Léon Moffat, je suis un jeune étudiant qui cherche constamment à faire de nouvelle découvertes. C'est pourquoi je prends une année pour travailler directement dans des pme de différents secteurs. Mon site présente certains des projets que j'ai réalisé ces deux dernières années.">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.2/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet/less" href="styles/styles.less">
+    <link rel="stylesheet/less" href="styles/typographie.less">
+    <link rel="stylesheet/less" href="styles/mise_en_page.less">
+    <LINK REL="SHORTCUT ICON" href="https://www.leonmoffat.com/media/favicon.ico">
 
 
-
-    <script src="src/assets/script/three/three.min.js"></script>
-    <script src="src/assets/script/three/OBJLoader.js"></script>
-    <script src="src/assets/script/three/OrbitControl.js"></script>
-    <script src="src/assets/script/three/GLTFLoader.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.2/dist/aos.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script> -->
+    <!-- <script src="script/parallax.js"></script> -->
 
-  </head>
-  <body>
 
-    <div id="app"></div>
+</head>
+<body id="accueil">
+    <nav class="container-fluid p-r-xs">
+        <ul class="container col-md-8 col-xl-8">
+            <li>
+              <a href="#sitesweb">Sites</a>
+              <ul>
+                <li class="p-t-b-xs"><a href="whataworld">What a world</a></li>
+                <li class="p-t-b-xs"><a href="mezclamayor">Mezcla Mayor</a></li>
+                <li class="p-t-b-xs"><a href="siteshebdo">Hebdomadaire</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#communication">Comm</a>
+              <ul>
+                <li class="p-t-b-xs"><a href="actualites">Actualités</a></li>
+                <li class="p-t-b-xs"><a href="vinsjura">Vins du jura</a></li>
+                <li class="p-t-b-xs"><a href="commmi">Com' MMI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#autres">Autre</a>
+              <ul>
+                <li class="p-t-b-xs"><a href="videommi">Video MMI</a></li>
+                <li class="p-t-b-xs"><a href="defi24h">Defi 24h</a></li>
+                <li class="p-t-b-xs"><a href="BossS3">Examen Boss</a></li>
+              </ul>
+            </li>
+            <li><a href="mailto:leonmfft@gmail.com">Contact</a></li>
+            <li id="lang"><a href="en/index">EN</a> | <a href="#">FR</a></li>
+        </ul>
+    </nav>
+    <header class="container-fluid">
+      <span></span>
+      <h1 class="animated fadeIn m-l-l" id="headtitle">
+        <a href="#">Léon Moffat</a>
+      </h1>
+      <a href="#intro" id="scroll">Scroll</a>
+    </header>
 
-    <footer>
-      <a href="#">Tiktok</a>
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="mailto:leonmfft@gmail.com">Contact</a>
+
+    <main>
+        <p id="intro" class="col-xs-12 col-md-6">
+            Salut ! Je m'appelle Léon Moffat. J'ai 20 ans et je viens d'obtenir mon diplôme en <a href="http://mmimontbeliard.com/">MMI à Montbéliard</a>. C'est dernières années je me suis essayé à de nombreux domaines.
+            Toujours à la recherche de nouvelles connaissances et à élargir mon esprit à de nouvelles disciplines. Deux sont sortie du lot pour moi. Le dévelopement web et le web marketing.
+        </p>
+
+        <!--
+            SITES INTERNET
+        -->
+
+        <section id="sitesweb" class="container-fluid">
+            <div class="container ligne scrolling">
+                <div class="col-sm-12 col-md-6 col-lg-6 aosMove" data-aos="fade-right">
+                  <figure>
+                    <img style="width: 100%" src="media/mockups.png" alt="mockups des sitees réalisés par Léon Moffat"> <!-- image sans lazy load -->
+                    <figcaption class="collapse">Mockup de mes sites</figcaption>
+                  </figure>
+                    <!-- <img class="" style="width: 100%" src="" data-src="media/mockups.png" alt="mockups des sites réalisés"/> -->
+                </div>
+                <div class=" col-sm-12 col-md-6 col-lg-6 rightline ">
+                    <!-- <h2 class="">Mes sites Webs</h2> -->
+                    <p>
+                        Ma passion pour internet a grandie aux côtés de mes travaux. J'ai particié et mené à bien de nombreux sites et plans de communications.
+                        Ma vision des choses, mon travail et l'aide de mon équipe ont permi à plusieurs de nos travaux de sortir du lot. Entre idée la plus originale de la promo
+                        ou plan le plus concret, innovant et fonctionnel. Ici je vous présente ce sur quoi j'ai travaillé ces derniers temps.
+                    </p>
+                    <!-- <div id="boutonSites" class="buttons">
+                        <a href="whataworld" class="bouton">What a world</a>
+                        <a href="mezclamayor" class="bouton">Mezcla Mayor</a>
+                        <a href="siteshebdo" class="bouton bouton_pcl">Sites hebdomadaires</a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="mesProjets" class="container-fluid bgwhite">
+          <div  class="container">
+            <div class="title">
+              <h2>Mes projets</h1>
+              <div class="tri">
+                <button class="select bold" id="on">Tout</button>
+                <button class="select" id="web">Sites</button>
+                <button class="select" id="com">Comm'</button>
+                <button class="select" id="other">Autres</button>
+              </div>
+            </div>
+            <ul id="projects" class="container">
+              <li class="project web"><a href="mezclamayor"><img src="media/mezclamayor-accueil.PNG" alt=""><p>Mezcla Mayor</p></a></li>
+              <li class="project oth"><a href="whataworld"><img src="media/whataworld-accueil.JPG" alt=""><p>What a World</p></a></li>
+              <li class="project web"><a href="https://epicerie-produits-mediterraneens.com/" target=_blank><img src="media/toques-accueil.JPG" alt=""><p>Toques et méditerranée</p></a></li>
+              <li class="project web"><a href="https://baf-fc.fr/" target=_blank><img src="media/baf-accueil.JPG" alt=""><p>BAF</p></a></li>
+              <li class="project web"><a href="https://figurines-wargame.fr/" target=_blank><img src="media/figur.JPG" alt=""><p>Qui commence</p></a></li>
+              <li class="project com"><a href="videommi"><img src="media/departmmi_petit.jpg" alt=""><p>Vidéo Promotion</p></a></li>
+              <li class="project com"><a href="vinsjura"><img src="media/vigne.jpg" alt=""><p>Vins du Jura</p></a></li>
+              <li class="project oth"><a href="defi24h"><img src="media/epopee_petit.jpg" alt=""><p>Défi 24h</p></a></li>
+              <li class="project web oth"><a href="BossS3"><img src="media/gore_petit.jpg" alt=""><p>Boss</p></a></li>
+              <li class="project web"><a href="sitesHebdo\hashtags\index.html"><img src="media/inshtager.JPG" alt=""><p>Inshatger</p></a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!--
+            PROJETS COMMUNICATIONS
+         -->
+
+        <section class="container-fluid bgwhite ligne" id="communication" >
+            <div class="container ligne">
+                <div class="leftline col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                    <!-- <h2>Projets de communication</h2> -->
+                    <p>
+                        Aujourd'hui, je travaille tous les jours sur ce qu'il me plait. J'apprend de nouvelles choses tous les jours, je m'améliore constament.
+                        Je me lève le matin avec pour but de rajouter du contenu à ce site. J'ai eu la chance de travailler sur des projets qui me tiennent à coeur. Sur des sites utilisés tous les jours.
+                        Demain me réserve des surprises, est-ce que vous en ferait partie ?
+                    </p>
+                    <!-- <div class="buttons">
+                      <a href="actualites" class="bouton_white bouton">Actualités</a>
+                        <a href="vinsjura" class="bouton bouton_white">Vins du Jura</a>
+                        <a href="commmi" class="bouton_white bouton">MMI Montbéliard</a>
+                    </div> -->
+                </div>
+                <div  id="img_com" class="col-md-6 col-sm-12 ligne fadeIn aosMove" data-aos="fade-left">
+                    <a href="vinsjura">
+                      <img src="media/affichejura.jpg" alt="Affiche des vins du jura"> <!-- image sans lazy load -->
+                      <!-- <img class="" style="width: 100%" src="" data-src="media/affichejura.jpg" alt="Affiche des vins du jura"/> -->
+                    </a>
+                    <a href="commmi">
+                      <img src="media/fb.png" alt="Affiche du département MMI Montbéliard">
+                      <!-- <img class="" style="width: 100%" src="" data-src="media/fb.png" alt="Affiche du département MMI Montbéliard"/> -->
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--
+            AUTRES PROJETS
+        -->
+
+        <!-- <section id="autres" class="container vist">
+            <div class="col-md-8 aosMove" data-aos="fade-up">
+                <h2 class="topline">Autres Projets</h2>
+                <p>Durant ou en dehors des cours, j'ai réalisé plusieurs <strong>projets</strong> pour approfondir certaines compétences ou mes capacités à travailler sous contraintes.
+                    <a href="https://youtu.be/3yw_WOsEE7k?t=12235">Vidéo de présentation du département</a>, <a href="https://drive.google.com/file/d/1QeruPhuChCW7lpFO-AzmCbplXNXvwNYI/view?usp=sharing">histoire audio réalisée en 24h</a> ou site internet réalisé en 8h, voici certaines de mes créations personnelles.
+                </p>
+            </div>
+            <div class="accordian col-md-12">
+                <ul>
+                    <li>
+                        <div class="image_title">
+                            <a href="videommi">Creation d'une video pour le departement MMI</a>
+                        </div>
+                        <a href="videommi">
+                            <img class="img_gallerie" src="media/departmmi.jpg" alt="Affiche du département MMI Montbéliard - Léon Moffat"/> <!-- image sans lazy load -->
+                            <!-- <img class="img_gallerie " src="" data-src="media/departmmi.jpg" alt="Affiche du département MMI Montbéliard"/>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="defi24h">Défi de creation artistique sur 24h</a>
+                        </div>
+                        <a href="defi24h">
+                            <img class="img_gallerie" src="media/epopee.PNG" alt="Affiche de l'histoire audio par Léon Moffat"/> <!-- image sans lazy load -->
+                            <!-- <img class="img_gallerie " src="" data-src="media/epopee.PNG" alt="Affiche de l'histoire audio"/>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="BossS3">Examen du Boss, creation d'un site internet en deux jours</a>
+                        </div>
+                        <a href="BossS3">
+                            <img class="img_gallerie" src="media/gore.jpg" alt="Photo de Gore Verbinski du site de Léon Moffat"/> <!-- image sans lazy load -->
+                            <!-- <img class="img_gallerie " src="" data-src="media/gore.jpg" alt="Photo de Gore Verbinski"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="grid">
+                <div>
+                    <a href="videommi"></a>
+                    <a href="defi24h"></a>
+                    <a href="BossS3"></a>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+    <footer id="footer" class="container-fluid">
+        <a href="https://www.instagram.com/leonmfft/" target=_blank rel="noreferrer">Instagram</a>
+        <a href="mailto:leonmfft@gmail.com">Contact</a>
+        <a href="https://www.facebook.com/leon.moffat.581" target=_blank rel="noreferrer">Facebook</a>
     </footer>
-
-    <script src="/dist/build.js"></script>
-    <script src='./src/assets/script/landingPage.js'></script>
-    <script src='./src/assets/script/main.js'></script>
-    <script src='./src/assets/script/menu.js'></script>
-    <script src='./src/assets/script/three/app.js'></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./src/assets/script/aos.js"></script>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  </body>
+    <script src="script/script.js"></script>
+</body>
 </html>

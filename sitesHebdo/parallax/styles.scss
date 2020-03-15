@@ -1,0 +1,69 @@
+
+#title{
+  position: absolute;
+  top:27%;
+  text-align: center;
+  width:100%;
+  margin:0;
+
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 5em;
+}
+p{
+  color: white;
+}
+.plxIhead {
+  width:100%;
+  height:auto;
+  position: absolute;
+  bottom:0;
+  left:0;
+  z-index:999;
+  overflow: hidden;
+}
+.inter {
+  height:20vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items:center;
+
+}
+.img-fluid{
+  width:100%;
+  height: 100vh;
+  // position: absolute;
+}
+.morceau {
+  height: 100vh;
+  position:relative;
+  &.text{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    flex-flow: column;
+    justify-content: space-between;
+
+    // Sépare à droite et à gauche
+    div{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      padding:0 2em;
+      p {
+        width: 33%;
+      }
+    &:nth-child(1) {
+      justify-content: flex-start;
+    }
+    &:nth-child(3) {
+      justify-content: flex-end;
+    }
+    }
+  }
+}
+main {
+  padding: 0;
+  background-color: black;
+}

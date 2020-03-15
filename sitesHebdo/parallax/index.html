@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Parallax</title>
+    <link rel="stylesheet" href="assets/stylesgraphiques.css">
+    <link rel="stylesheet" href="assets/typographie.css">
+    <link rel="stylesheet" href="assets/misesenpage.css">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Page1</li>
+          <li>Page2</li>
+        </ul>
+      </nav>
+      <h1 id="title">Site avec Parallax</h1>
+      <img class="plxIhead" src="media/mountain.png" alt="Chaine de monntagne">
+    </header>
+    <main>
+
+      <div class="inter">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illum culpa reprehenderit, cupiditate nulla corporis unde iure error officia cumque perferendis, labore possimus praesentium voluptas molestiae magni cum, maxime placeat.</p>
+      </div>
+
+      <section>
+        <div class="morceau">
+          <!-- permet de fixer l'image -->
+          <div id="scroller-anchor" class="scroller-anchor"></div>
+          <img id="scroller" class="scroller img-fluid lax" data-lax-preset="fadeOut" data-lax-anchor=".scroller-anchorB" src="https://www.esterel-cotedazur.com/wp-content/uploads/2019/06/lac-saint-cassien-couverture-1600x740.jpg" alt="">
+        </div>
+
+        <div class="text morceau">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis aliquid tempora nam autem ad, magnam sed consequuntur nemo, labore excepturi dolorum tenetur, ipsum. Hic perferendis ducimus, maiores iure tempora.</p>
+          </div>
+          <div class="scroller-anchorB"></div>
+
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis aliquid tempora nam autem ad, magnam sed consequuntur nemo, labore excepturi dolorum tenetur, ipsum. Hic perferendis ducimus, maiores iure tempora.</p>
+          </div>
+          <div class="scroller-anchor"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="morceau">
+          <img class="scroller img-fluid off lax" data-lax-preset="fadeInOut" src="https://images.france.fr/zeaejvyq9bhj/50SO3DJD5YKw4IqYOaamsk/e7d1ba067613011eb4cb9f5f49962944/1120x490-Montagne.jpg?w=1120&h=491&q=70&fl=progressive&fit=fill" alt="">
+
+        </div>
+        <div class="text morceau">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis aliquid tempora nam autem ad, magnam sed consequuntur nemo, labore excepturi dolorum tenetur, ipsum. Hic perferendis ducimus, maiores iure tempora.</p>
+          </div>
+          <div class="scroller-anchorB"></div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis aliquid tempora nam autem ad, magnam sed consequuntur nemo, labore excepturi dolorum tenetur, ipsum. Hic perferendis ducimus, maiores iure tempora.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="morceau">
+          <!-- permet de fixer l'image -->
+          <div id="scroller-anchor" class="scroller-anchor"></div>
+          <img id="scroller" class="scroller img-fluid" src="https://www.esterel-cotedazur.com/wp-content/uploads/2019/06/lac-saint-cassien-couverture-1600x740.jpg" alt="">
+        </div>
+
+        <div class="text morceau">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis aliquid tempora nam autem ad, magnam sed consequuntur nemo, labore excepturi dolorum tenetur, ipsum. Hic perferendis ducimus, maiores iure tempora.</p>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis aliquid tempora nam autem ad, magnam sed consequuntur nemo, labore excepturi dolorum tenetur, ipsum. Hic perferendis ducimus, maiores iure tempora.</p>
+          </div>
+          <div class="scroller-anchor"></div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
