@@ -16,12 +16,85 @@
     <link rel="stylesheet/less" href="../styles/mise_en_page.less">
     <LINK REL="SHORTCUT ICON" href="https://www.leonmoffat.com/media/favicon.ico">
 
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script> -->
-    <!-- <script src="script/parallax.js"></script> -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "HowTo",
+        "name": "How to come up with a logo",
+        "decription": "Coming up with new logos isn't easy, especially if you're not a professional. This guide will help you come up with a personal logo easly.",
+        "image": {
+        "@type": "ImageObject",
+        "url": "https://example.com/photos/1x1/photo.jpg",
+        "height": "246",
+        "width": "230"
+        },"estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "24"
+        },"tool":[
+          {
+            "@type": "HowToTool",
+            "name": "Adobe Illustrator"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Paper"
+          }
+        ]
+        "step": [
+          {
+             "@type": "HowToStep",
+             "url": "https://www.leonmoffat.com/articles/creatinglogo#step1",
+             "name": "Identifiez vos valeurs",
+             "itemListElement": [{
+               "@type": "HowToDirection",
+               "text": "Commencez par trouver ce que votre logo doit raconter."
+             },
+            {
+              "@type": "HowToDirection",
+              "text": "Faites une liste de vos valeurs et choisissez les plus importants."
+            }
+           ]
+          }, {
+            "@type": "HowToStep",
+            "url": "https://www.leonmoffat.com/articles/creatinglogo#step2",
+            "name": "Mettez tout sur papier",
+            "itemListElement": [{
+              "@type": "HowToDirection",
+              "text": "Mettez chaque idée qui vous passe par la tête sur papier. Ne vous arrêtez pas sur une idée."
+            },
+            {
+              "@type": "HowToDirection",
+              "text": "Variez vos recherches, faites des choses totalement différentes."
+            }]
+          }, {
+            "@type": "HowToStep",
+            "url": "https://www.leonmoffat.com/articles/creatinglogo#step3",
+            "name": "Trouvez des variantes",
+            "itemListElement": [{
+              "@type": "HowToDirection",
+              "text": "Choisissez votre idée préférée et faites en des variantes. À ce stade, vos logos devraient tous se ressembler à peu près. L'idée est de pofiner votre dessin, de la faire varier légèrement."
+            },
+            {
+              "@type": "HowToDirection",
+              "text": "À la fin de cette étape, vous devriez avoir un logo proche du final. Quand vous l'avez, mettez-le au propre, toujours sur papier. Vous aurez une vision solide d'où vous allez."
+            }]
+          }, {
+            "@type": "HowToStep",
+            "url": "https://www.leonmoffat.com/articles/creatinglogo#step4",
+            "name": "Digitalisez le",
+            "itemListElement": [{
+              "@type": "HowToDirection",
+              "text": "Utilisez un logiciel du type Adobe Illustrator pour faire un svg ou png. Cherchez une variante du logiciel sur Google si vous ne l'avez pas. Il existe des tutos très complet sur internet."
+            }]
+          }
+        ]
+      }
+    </script>
 </head>
 <body id="articles">
   <header class="headerarticles ">
@@ -34,10 +107,6 @@
   </header>
   <main class="container-fluid bgwhite">
     <div class="container">
-
-
-
-
       <div>
         <h2>Pourquoi c'est important</h2>
         <p>
@@ -69,31 +138,32 @@
       </div>
       <div>
         <h2>Les étapes à suivre :</h2>
-        <h3>Identifiez vos valeurs</h3>
+        <h3 id="step1">Identifiez vos valeurs</h3>
         <p>
           Il faut commencer par trouver ce que votre logo doit raconter. Quels sont les attributs de votre entreprise, qu'est ce qui vous sépare de la concurrence ?
           Faites en une liste et choisissez les plus importants. Par exemple, pour un chalet de montagne luxueux. Les points importants pourraient être la communion avec la nature et la luxure.
         </p>
-        <h3>Mettez tout sur papier</h3>
+        <h3 id="step2">Mettez tout sur papier</h3>
         <p>
           Chaque idée qui vous passe par la tête doit se retrouver sur votre feuille. N'effacez rien. Si vos dessins, individuellement, ne vous plaisent pas, certains éléments pourront être utilisable.
           Ne vous arrêtez pas sur une idée. Variez vos recherches, faites des choses totalement différentes.
         </p>
-        <h3>Trouvez des variantes</h3>
+        <h3 id="step3">Trouvez des variantes</h3>
         <p>
           Choisissez votre idée préférée et faites en des variantes. À ce stade, vos logos devraient tous se ressembler à peu près. Du moins avoir la même base.
           L'idée est de pofiner votre dessin, de la faire varier légèrement. À la fin de cette étape, vous devriez avoir un logo proche du final. Quand vous l'avez, mettez-le au propre, toujours sur papier.
           Vous aurez une vision solide d'où vous allez.
         </p>
-        <h3>Digitalisez le</h3>
+        <h3 id="step4">Digitalisez le</h3>
         <p>
           Enfin, il est temps d'en faire un svg et un png. Le premier est un format d'image qui ne perd pas sa qualité quand on zoom dessus. Le second est une image de bonne qualité avec un fond transparent.
           Pour cela, vous aurez besoin d'un logiciel du type Adobe Illustrator. Cherchez des variantes sur Google si vous ne l'avez pas. Vous pouvez scanner votre dessin mis au propre pour avoir une base.
           À la fin, exportez votre fichier, vous avez votre logo.
         </p>
+        <img src="../media/logo_leonMoffat_grand_bicouleur.png" alt="Logo fini du site leonmoffat.com en bi couleur">
       </div>
       <div>
-        <h2>Partagez le !</h2>
+        <h3 id="step5">Partagez le !</h3>
         <p>
           Vous avez maintenant votre logo, faite le savoir. C'est le nouveau visage de votre organisation.
         </p>
